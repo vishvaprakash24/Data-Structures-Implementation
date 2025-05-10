@@ -29,6 +29,9 @@ class Stack:
     def is_empty(self):
         return self.top < 0
 
+    def is_full(self):
+        return self.top == self.cap - 1
+
 s = Stack(5)
 s.push(10)
 s.push(20)
